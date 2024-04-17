@@ -3,6 +3,7 @@
 --]]
 --vim.g.mapleader = "'" 
 -- disable mappings
+local opts = {}
 vim.keymap.set('i', '<C-[>', '<NOP>', opts)
 -- get out of insert mode
 vim.keymap.set('i', 'jk', '<esc>', opts)
@@ -10,6 +11,8 @@ vim.keymap.set('i', 'jk', '<esc>', opts)
 vim.keymap.set('n', 'J', ':MoveLine(1)<CR>', opts)
 vim.keymap.set('n', 'K', ':MoveLine(-1)<CR>', opts)
 
+vim.keymap.set('n', '[d', vim.diagnostic.goto_prev,opts )
+vim.keymap.set('n', ']d', vim.diagnostic.goto_next,opts)
 -- Visual-mode commands
 vim.keymap.set('v', 'J', ':MoveBlock(1)<CR>', opts)
 vim.keymap.set('v', 'K', ':MoveBlock(-1)<CR>', opts)

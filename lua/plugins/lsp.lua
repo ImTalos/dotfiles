@@ -10,7 +10,7 @@ return {
     'neovim/nvim-lspconfig',
     dependencies = {
       {'hrsh7th/cmp-nvim-lsp'},
-    }
+    },
   },
   -- adding mason for installing language servers
   {'williamboman/mason.nvim'},
