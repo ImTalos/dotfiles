@@ -15,12 +15,15 @@ local function get_if_available(name, opts)
 	return "default"
 end
 
-local colorscheme = get_if_available("tokyonight",{
-    style = "night",
-    terminal_colors = true,
-    on_colors = function(colors)
-	colors.bg = colors.black
+local colorscheme = get_if_available("rose-pine",{
+    dark_variant = 'main',
+    groups = {
+	background = "#181616",
+    },
+--[[   on_colors = function(colors)
+	colors.bg = "#181616"
     end
+--]]
 })
 
 return colorscheme
