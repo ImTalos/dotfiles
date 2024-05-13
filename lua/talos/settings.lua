@@ -1,19 +1,20 @@
 --[[
 --  editor opt settings
 --]]
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.mouse = 'a'
-vim.opt.hlsearch = false
-vim.opt.breakindent = true
-vim.opt.shiftwidth = 4
-vim.opt.cursorline = true
+local opt = vim.opt
+opt.number = true
+opt.relativenumber = true
+opt.mouse = 'a'
+opt.hlsearch = false
+opt.breakindent = true
+opt.shiftwidth = 4
+opt.cursorline = true
 -- Syncs clipboard between Neovim to OS
-vim.opt.clipboard = 'unnamedplus'
-vim.opt.hlsearch = true
+opt.clipboard = 'unnamedplus'
+opt.hlsearch = true
 
-vim.opt.updatetime = 250
-vim.opt.timeoutlen = 300
+opt.updatetime = 250
+opt.timeoutlen = 300
 
 -- Apply theme
 local colorscheme = require("talos.colorscheme")
