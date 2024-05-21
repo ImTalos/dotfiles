@@ -27,6 +27,7 @@ set('', '<right>', '<nop>')
 -- keysetings
 set('n','<leader>w','<cmd>write<cr>',{desc = 'Save'})
 set('n','<leader>q','<cmd>q<cr>',{desc = 'Quit'})
+set('n','<leader>wq','<cmd>wq<cr>',{desc = 'Quit'})
 set('n','<leader>r','<cmd>q!<cr>',{desc = 'Quit'})
 set('n','<leader>k','<cmd>Man<cr>',{desc = 'Man'})
 set('n','<leader>e',vim.cmd.Ex,{desc = 'Explorer'})
