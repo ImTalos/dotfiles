@@ -10,7 +10,7 @@ require('mason-lspconfig').setup({
     "github:mason-org/mason-registry",
     "lua:mason-registry.index"
   },
-  ensure_installed = { "clangd","rust_analyzer"},
+  ensure_installed = { "clangd","lua_ls","rust_analyzer"},
   handlers = {
 	lsp_zero.default_setup,
       },
