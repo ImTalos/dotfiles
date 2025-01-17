@@ -4,7 +4,7 @@ Neovim configuration
 1. git clone the repo
 2. cd into dotfiles directory
 3. run `stow nvim`
-4. now `~/.config/nvim` will have a link to the repository 
+4. now `~/.config/nvim` will have a symbolic link from the reposlitory path 
 
 # Misc
 in addition to neovim, some other configurations as well:
