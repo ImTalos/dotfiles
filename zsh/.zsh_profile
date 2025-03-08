@@ -1,0 +1,8 @@
+# envs
+export TOOLS_PATH="$HOME/tools/"
+export DOTFILES_PATH="$HOME/dotfiles/"
+export STOW_FOLDERS="nvim,tmux,zsh"
+export PERSONAL_FOLDER="$HOME/personal/"
+
+export PATH="$PATH:$TOOLS_PATH/FlameGraph/"
+
