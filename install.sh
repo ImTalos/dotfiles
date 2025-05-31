@@ -1,4 +1,4 @@
-#/usr/bin/env zsh
+#!/usr/bin/env zsh
 #
 # make sure to source all required envs
 #
@@ -7,15 +7,10 @@ pushd $DOTFILES_PATH
     for folder in $(echo $STOW_FOLDERS | sed "s/,/ /g")
     do
 	echo "stow $folder"
-	stow -D $folder
-	stow $folder
+	stow -R $folder
     done
 popd
 
 if [ -d "$PERSONAL_FOLDER" ]; then
-    pushd $PERSONAL_FOLDER
-	./install
-    popd $PERSONAL_FOLDER
+    $PERSONAL_FOLDER/install.sh
 fi
-
-exec zsh

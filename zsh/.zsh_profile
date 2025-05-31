@@ -1,8 +1,16 @@
 # envs
-export TOOLS_PATH="$HOME/tools/"
-export DOTFILES_PATH="$HOME/dotfiles/"
+export TOOLS_PATH="$HOME/tools"
+export DOTFILES_PATH="$HOME/dotfiles"
 export STOW_FOLDERS="nvim,tmux,zsh"
-export PERSONAL_FOLDER="$HOME/personal/"
+export PERSONAL_FOLDER="$DOTFILES_PATH/personal"
 
 export PATH="$PATH:$TOOLS_PATH/FlameGraph/"
 
+
+alias copy="xclip -sel clip"
+alias pasta="xclip -o -sel clip"
+alias run="$DOTFILES_PATH/scripts/startup.sh"
+alias vim="nvim"
+
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh

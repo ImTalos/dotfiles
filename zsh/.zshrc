@@ -75,7 +75,13 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-#source $HOME/.zsh_profile
+source ~/.zsh_profile
+
+# start X11
+#if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then 
+#  exec startx &>/dev/null 
+#fi
+
 
 # User configuration
 
